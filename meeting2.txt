@@ -1,57 +1,57 @@
 [System]
-only add information to the system
+~only add information to the system
 
 [Modules]
-admin adds the module
-1+TA 1+convenor(coconvenor)
+~admin adds the module
+~1+TA 1+convenor(coconvenor)
 
 - student list
 admin:
-    update enrolled students
+~    update enrolled students
 convenor:
-    update students (out of sync with FO)
-all student preserved (merge with old)
-    indicate exited students
-student sheet may out of date
-student format
-    import sheet (unknown format)
-    manual add id degree name gender email
-module attendence record
-    included all students once in the module
+    ~update students (out of sync with FO)
+~all student preserved (merge with old)
+    ~indicate exited students
+~student sheet may out of date
+~student format
+    ~import sheet (unknown format)
+    ~manual add id degree name gender email
+~module attendence record
+    ~included all students once in the module
 
 [Session]
-sessions created on need
+~sessions created on need
 - attendance
-not attended
-    not joined/not come
-TA change attendence sheet
-    convenor can freeze it
-highlight absent ppl 
-session types
-
-[Form]
-form content are confidencial
-    paper locked in safe place
-    no scans
-    only indicate existence
-    FO may send notification of form arrival (email)
-    admin approve forms?
+~not attended
+~    not joined/not come
+~TA change attendence sheet
+~    convenor can freeze it
+~highlight absent ppl 
+~session types
 keep physical attendence
     sheet copy [opt]
-ec undecided state
-convenor cant see ec reasons
+
+[Form]
+~form content are confidencial
+    ~paper locked in safe place
+    no scans
+    ~only indicate existence
+    FO may send notification of form arrival (email)
+    admin approve forms?
+~ec undecided state
+~convenor cant see ec reasons
 
 [Roles]
-module convenor (role) decouples from person
-(multiple role/person)
+~module convenor (role) decouples from person
+~(multiple role/person)
 
 [Query]
-stat: total absent by module 
+stat: 
+by time range (student absence by session)total absent by module 
 by module/student/week
-by time range (student absence by session)
 
 [Document]
-create: some info must be filled
+~create: some info must be filled
 
 [Meeting]
 send document early
