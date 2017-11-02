@@ -1,0 +1,41 @@
+admin adds the module
+module convenor (role) decouples from person
+(multiple role/person)
+send document early
+1+TA 1+convenor(coconvenor)  
+sessions created on need
+create: some info must be filled
+admin:
+    update enrolled students
+convenor:
+    update students (out of sync with FO)
+all student preserved (merge with old)
+    indicate exited students
+student sheet may out of date
+only add information to the system
+not attended
+    not joined/not come
+
+student format
+    import sheet (unknown format)
+    manual add id degree name gender email
+module attendence record
+    included all students once in the module
+highlight absent ppl
+keep physical attendence
+    sheet copy [opt]
+TA change attendence sheet
+    convenor can freeze it
+senior tutor see modules but does not manage session & attendance (read only)
+form content are confidencial
+    paper locked in safe place
+    no scans
+    only indicate existence
+    FO may send notification of form arrival (email)
+    admin approve forms?
+by module/student/week
+by time range (student absence by session)
+convenor cant see ec reasons
+ec undecided state
+stat: total absent by module 
+session types
