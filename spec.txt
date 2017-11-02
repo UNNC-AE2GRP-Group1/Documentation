@@ -1,100 +1,81 @@
-1         Introduction
+1 Introduction
 
-1.1        Project Identification
+1.1 Project Identification
 
 
-
-1.2       Purpose
+1.2 Purpose
 
 This Software Requirement Specification (SRS) identifies the requirements and specification for the software of this project. It explains the functional features of the animation together with design, interface details and other considerations.
 
-1.3       Scope
+1.3 Scope
 
  
 
-1.4       Overview
+1.4 Overview
 
 The rest of the SRS presents the specifications of the software in detail. Section 2 of the SRS is the overall descriptions of the software and its functional requirements. Section 3 outlines other related non-functional requirements of the software.
 
  
 
-2        Overall Descriptions
+2 Overall Descriptions
 
 This section specifies the software platform and functional requirements including core features and optional features.
 
  
 
-2.1       Product Perspectives
+2.1 Product Perspectives
 
 The software is an web based product intended for use on Linux and mobile phone.
 
  
 
-2.2       Product Functions
+2.2 Product Functions
 
 The list provides a description of main functional features. These features are divided to two categories: core features and optional features. Core features are essential to the operation of the application, and optional features are additional functionalities.
 
  
 
-2.2.1                 Core features
+2.2.1 Core features
 
- The system package defined by this specification.
+[1] Conceptual Entities
 
-2.2.1.1 Module
+(1) Module
 
 A module represents a running course in the university, with necessary information for creating sessions and managing access to data through roles.
 
- 
-
-Module information
+- Module information
 
 A module contains a module name, a module code, the year in which its is running, a module convener, one or more lab assistants, and a list of enrolled students.
 
- 
+- Creating a module
 
-Creating a module
+A module must be created by a senior tutor.*2 Or read cvs file? During the creation, all information except the module convener, the lab assistant and the list of enrolled students must be complete.
 
-A module must be created by a senior tutor.*2 Or read cvs file?  During the creation, all information except the module convener, the lab assistant and the list of enrolled students must be complete.
-
- 
-
-Updating module information
+- Updating module information
 
 After the creation, a senior tutor may modify any information associated with the module, except the list of enrolled students, which may be updated only by the assigned module convener. The convener obtains the list of enrolled student from external official source such as the Faculty Office, converts it to a predefined format, and upload it to the system, overwriting the existing information.
 
- 
-
-Module archive
+- Module archive
 
 When a module is finished, a senior tutor may archivethe module, hereafter no information of the module may be changed, and no session of the module may be created.
 
- 
-
-2.2.1.2 Session
+(2) Session
 
 A session represents a particular event of a module happening physically at some place that requires a recording of attendance.
 
- 
-
-Session information
+- Session information
 
 A session contains the module for which the session is run for, a time, a place, an attendance list, an attendance record and an extenuating circumstances (EC) application record.
 
- 
-
-Creating a session
+- Creating a session
 
 A session of a module may be created by the convenor of the module for the purpose of recording its attendance. To create a session,the module must have its list of enrolled students defined. Upon the creation of a session, a copy of current list of enrolled students of the module is created and permanantly associated with the session, then the session is marked as no attendance record has submitted. After the creation of a session, the module convenor, or any lab assistant assigned to the module, may obtain a printable document of an attendance sheet containing a list of student ID and name of those from the aforementioned copy of currently enrolled student list and places for putting their signatures. That document may be obtained as many times as needed.
 
- 
-
-Collecting attendance record
+- Collecting attendance record
 
 If a session is marked as no attendance record has submitted yet, the convenor of the module or the assigned lab assistant of the module may create such a record, by manually select the names of absent people in a special-purpose user interface and submit it to the system. The absent form can be changed before submission in case of late coming students. However, once the submission success, the lab assistant can no longer edit the attendance record of the session.
 
- 
-
-2.2.1.3 Role
+(3) Role
 
 Access permissions to different data are authorized tousers though assigning one or more roles to the user, with each role being acollection of permission of accessing a particular type of data with differentaccess levels, including read and write.
 
@@ -107,6 +88,7 @@ The system should allow senior tutor to search attendance record of a module by 
 The system should allow senior tutor to search attendance record of a student by student name or ID.
 The system should allow senior tutor to see EC application and the details about who, when and why.
 The system should allow senior tutor to approval or reject EC form.
+
 Module Convenor: 
 
 The system should allow module convenor to create a class by DD/MM/YYYY.
@@ -116,28 +98,22 @@ The system should allow module convenor to see the accepted EC form and the name
 The system should allow module convenor to add students that they are not on the enrolled student list.
 The system should allow module convenor to sign attendees in student list.
 The system should allow module convenor to download copy of currently enrolled student list.
+
 Lab assistance:
 
 The system should allow module convenor to download copy of currently enrolled student list.
 The system should allow module convenor to sign attendees in student list.
 
 
-2.2.2                Optional features
+2.2.2 Optional features
 
- 
 
- 
+3 Specific Requirements
 
-3        Specific Requirements
+This section specifies the nonfunctionalrequirements including capacity, software language, and online user documentation and help system requirements. 
 
-This section specifies the nonfunctionalrequirements including capacity, software language, and online user documentation and help system requirements.
+1. Capacity
 
- 
+2. Software Language
 
-1.       Capacity
-
-2.       Software Language
-
-3.       Online User Documentation and Help System Requirements
-
- 
+3. Online User Documentation and Help System Requirements
