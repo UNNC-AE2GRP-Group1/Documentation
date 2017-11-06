@@ -1,0 +1,8 @@
+student information are independent for each module
+    add/remove for each module
+lock/unlock module (archiving)
+session creation remove impl detail
+batch session creation / manual
+form content
+    student id, date, module
+custom search
