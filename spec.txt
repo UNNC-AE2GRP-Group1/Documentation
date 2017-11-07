@@ -25,7 +25,7 @@ This section specifies the software platform and functional requirements includi
 
 2.1 Product Perspectives
 
-The software is an web based product intended for use on Linux and mobile phone.
+The software is a web based product intended for use on Linux and mobile phone.
 
  
 
@@ -43,7 +43,7 @@ A module represents a course in the university.
 
 - Module information
 
-A module contains a name, a code, an academic year, one or more module conveners, zero or more teaching assistants, and an student list.
+A module contains a name, a code, an academic year, one or more module conveners, zero or more teaching assistants, and a student list.
 
 - Module creation
 
@@ -55,7 +55,7 @@ After the creation, an administrator may modify the information of the module, s
 
 - Student list
 
-The student list is a set student records, including all students once enrolled in the module, with an indicator of the enrollment status, which can be enrolled or exited. Each student record contains a student ID, a first name, a family name, a degree name, a gender, and an email address. The student records belong to the student list. If queries on a particular student involved in multiple modules is needed, the student is uniquely identified by the student ID.
+The student list is a set of student records, including all students once enrolled in the module, with an indicator of the enrollment status, which can be enrolled or exited. Each student record contains a student ID, a first name, a family name, a degree name, a gender, and an email address. The student records belong to the student list. If queries on a particular student involved in multiple modules is needed, the student is uniquely identified by the student ID.
 
 Any convenor of the module, or administrator, may edit the student list. The student list may be imported from a csv file, ("data source"), or manually edited.
 
